@@ -1,0 +1,32 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.guide-card {
+    border-radius: $border-radius-01-width;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba($boxshadow-01-color, 0.5);
+
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        box-shadow: 0 0 8px 0 rgba($boxshadow-02-color, 0.25);
+        transform: translateY(-2px);
+    }
+
+    &__image {
+        position: relative;
+        height: 200px;
+        @include respond(phone) {
+            height: 180px;
+        }
+    }
+
+    &__title {
+        padding: 30px 20px;
+        height: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

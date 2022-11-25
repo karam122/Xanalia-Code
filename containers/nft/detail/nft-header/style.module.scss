@@ -1,0 +1,21 @@
+@import '@/styles/_mixins';
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-items: start;
+
+    @include respond(tab-port) {
+        & > button {
+            flex: 1;
+        }
+    }
+
+    button {
+        width: fit-content;
+    }
+}
+
+.cancel-auction {
+    margin-top: 20px;
+}

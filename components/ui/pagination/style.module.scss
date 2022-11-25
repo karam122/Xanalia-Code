@@ -1,0 +1,41 @@
+@import '@/styles/_variables.scss';
+
+.custom-pagination {
+    margin: -4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    > li[class*='page-item'] {
+        margin: 4px;
+
+        > *[class*='page-link'] {
+            border-radius: 1000px;
+            min-width: 25px;
+            min-height: 25px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 14px;
+
+            transition: all 0.1s ease-in-out;
+
+            background-color: $background-05-color;
+            border-color: $background-05-color;
+
+            &:hover,
+            &:focus {
+                transform: scale(150%);
+                background-color: $primary-color;
+                border-color: $primary-color;
+                color: white;
+            }
+        }
+
+        &[class*='active'] > *[class*='page-link'] {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+}

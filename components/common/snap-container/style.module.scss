@@ -1,0 +1,48 @@
+.snap-container {
+    --space-item: 13px;
+    --play: running;
+    --direction: normal;
+    --duration: 60s;
+    --delay: 0s;
+    --iteration-count: infinite;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+    &:hover {
+        --play: paused;
+    }
+
+    > div {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        animation: scroll-x var(--duration) linear var(--delay)
+            var(--iteration-count);
+        animation-play-state: var(--play);
+        animation-delay: var(--delay);
+        animation-direction: var(--direction);
+
+        > div {
+            margin-left: var(--space-item);
+            margin-right: var(--space-item);
+        }
+    }
+}
+
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,129 @@
+@import '/styles/variables';
+@import '/styles/mixins';
+
+.switch-chain {
+    &__modal {
+        padding: 30px;
+
+        &__header {
+            margin-bottom: 26px;
+        }
+
+        @include respond(phone) {
+            padding: 16px;
+
+            &__header {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__g-chain {
+        display: flex;
+        flex-direction: row;
+        margin: -8px;
+        > * {
+            margin: 8px;
+        }
+
+        @include respond(phone) {
+            margin: -6px;
+
+            > * {
+                margin: 6px;
+            }
+        }
+    }
+
+    &__chain {
+        flex: 1;
+        border: 1px solid $primary-color--1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1 / 1;
+        border-radius: 10px;
+        cursor: pointer;
+        background: white;
+        box-shadow: 0 0 0 black;
+
+        &[class*='focus'],
+        &:hover,
+        &:focus {
+            background: $primary-color--2;
+            border-color: transparent;
+        }
+
+        &[class*='active'],
+        &:active {
+            background: $background-12-color;
+            border-color: transparent;
+
+            > p {
+                color: white;
+            }
+        }
+        &[class*='active'] {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                $w: 20px;
+                width: $w;
+                height: $w;
+                // background-color: red;
+                top: 8px;
+                right: 8px;
+                background-image: url('/svgs/check-icon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @include respond(phone) {
+                    $w: 16px;
+                    width: $w;
+                    height: $w;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+        }
+
+        > svg {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 12px;
+        }
+
+        > p {
+            margin-bottom: 0;
+            font-weight: 400;
+            user-select: none;
+        }
+
+        @include respond(phone) {
+            > svg {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 16px;
+            }
+
+            > p {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+.polygon {
+    border-radius: 50%;
+    color: #8247e5;
+}
+
+.error-message {
+    margin-top: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}

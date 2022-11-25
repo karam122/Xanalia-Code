@@ -1,0 +1,27 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.grid-btn-group {
+    display: flex;
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+
+.btn__wrapper {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border: 1px solid $border-15-color;
+    border-radius: 3px;
+    cursor: pointer;
+    &--active {
+        background-color: $background-16-color;
+    }
+}
+.btn__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

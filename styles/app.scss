@@ -1,0 +1,167 @@
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'base';
+@import 'functions';
+@import 'typography';
+@import 'utilities';
+@import 'overide-bootstrap';
+@import 'crisp-client';
+@import '../containers/creativeAwards/creativeAwards2022.module.scss';
+@import '../containers/awards2021/awardBanner.module.scss';
+@import '../containers/awards2021/awards.module.scss';
+@import '../containers/awards2021/awardBanner.module.scss';
+
+// @import '../containers/awards2021/awardBody.module.scss';
+// @import '../containers/awards2021/awardBody.module.scss';
+// @import '../containers/awards2021/awards2021.module.scss';
+// @import '../containers/awards2021/awardBanner.module.scss';
+
+// announcement pop up; to be removed soon from production
+.announcment-modal {
+    .modal-dialog {
+        margin: 0 auto;
+        height: 100vh;
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 650px;
+
+            @media (max-width:1365px){
+                width: 500px;
+                padding: 12px;
+            }
+            @media (max-width:767px){
+                width: 85%;
+                min-width: 300px;
+                padding: 10px;
+                max-width: 435px;
+            }
+
+            .modal-body {
+                padding: 25px 50px;
+                text-align: center;
+
+                @media (max-width:1365px){
+                    padding: 10px 15px;
+                }
+                @media (max-width:767px){
+                    padding: 5px 0;
+                }
+
+                .alert-icon {
+                    margin-bottom: 20px;
+
+                    @media (max-width:1365px){
+                        margin-bottom: 10px;
+                    }
+                    @media (max-width:767px){
+                        margin-bottom: 5px;
+                    }
+
+                    svg {
+                        width: 55px;
+                        height: 55px;
+
+                        @media (max-width:1365px){
+                            width: 35px;
+                            height: 35px;
+                        }
+                        @media (max-width:767px){
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+
+                .modal-title {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #000;
+                    margin-bottom: 5px;
+
+                    @media (max-width:1365px){
+                        font-size: 18px;
+                    }
+                    @media (max-width:767px){
+                        font-size: 16px;
+                    }
+                }
+
+                p {
+                    .inner-text{
+                        margin:15px 0;
+
+                        @media (max-width:1365px){
+                            margin:10px 0;
+                        }
+                        @media (max-width:767px){
+                            margin:5px 0;
+                        }
+                    }
+
+                    @media (max-width:1365px){
+                        font-size: 14px;
+                        line-height: 1.3;
+                    }
+                    @media (max-width:767px){
+                        font-size: 12px;
+                        line-height: 1.4;
+                    }
+                }
+
+                .btn{
+                    font-size: 16px;
+                    font-weight: 700;
+                    width: 55%;
+                    padding: 17px;
+                    background: #008FFF;
+                    border: none;
+
+                    @media (max-width:1365px){
+                        font-size: 14px;
+                        width: 250px;
+                        padding: 12px;
+                    }
+                    @media (max-width:767px){
+                        font-size: 13px;
+                        width: 120px;
+                        padding: 8px 10px;
+                    }
+                    
+                }
+
+                a {
+                    color: #008FFF;
+                }
+            }
+        }
+    }
+}
+
+.margin-left-sidebar-open{
+    .style_nft-detail-page__CBkdu {
+        max-width: 100% !important;
+    }
+}
+
+.basic-multi-select{
+    width: 50%;
+}
+
+.body-table.accordion-body{
+    .basic-multi-select{
+        width: calc(100% - 25px) !important;
+        margin: 5px auto;
+    }
+}
+
+.react-thumbnail-generator{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;  
+}

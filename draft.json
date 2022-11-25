@@ -1,0 +1,677 @@
+{
+    "list": [
+        {
+            "nftId": 31,
+            "name": "Crazy monkey 0001",
+            "category": 1,
+            "standardType": 1,
+            "description": "This is crazy monkey NFT",
+            "marketNftStatus": 2,
+            "tokenPrice": null,
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/3/1655795841811_1.png",
+            "tokenId": "1",
+            "price": "3.0000000000",
+            "totalActivities": "26",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 3,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/null",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x9b500a4b354914d420c3d1497aee4ba9d45b7df0"
+            },
+            "collection": {
+                "name": "Crazy Monkey",
+                "address": "0x99ca64Cea3037429291D15C5425bBD85d973265c",
+                "avatar": "https://storage.xanalia.com/output/user-collective/3/1655795649745.png"
+            },
+            "owner": {
+                "userId": 3,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0x9b500a4b354914d420c3d1497aee4ba9d45b7df0"
+            },
+            "saleData": {
+                "fixPrice": null,
+                "auction": {
+                    "auctionId": 15,
+                    "tokenPrice": "USDT",
+                    "status": 1,
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+                    "highestPrice": "3.0000000000",
+                    "startPrice": "1.0000000000",
+                    "endPrice": "0.0000000000",
+                    "stepPrice": "0.0000000000",
+                    "startTime": "2022-06-21T08:50:15.000Z",
+                    "endTime": "2022-06-22T09:05:15.000Z",
+                    "highestBidder": "0xea631ce3eccf6b3506857cbba7e5ead1c752a1ca"
+                }
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 1
+        },
+        {
+            "nftId": 36,
+            "name": "Trang Test No.1",
+            "category": 1,
+            "standardType": 1,
+            "description": "Trang",
+            "marketNftStatus": 1,
+            "tokenPrice": "USDT",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/27/1655800290956_1.jpeg",
+            "tokenId": "1",
+            "price": null,
+            "totalActivities": "13",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 27,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/27/1655800489960.png",
+                "name": "Trang_Baby2",
+                "facebookLink": null,
+                "instagramLink": "https://frontend.xanalia.com/",
+                "twitterLink": "hiiiiiiiii",
+                "address": "0xf33ce2c3719e75fce5ba4ce0bb14ce4296850d7d"
+            },
+            "collection": {
+                "name": "Trang Phạm",
+                "address": "0xDd92687f88b07d818d38952319C979bdba8DCEeE",
+                "avatar": "https://storage.xanalia.com/output/user-collective/27/1655800204570.jpeg"
+            },
+            "owner": {
+                "userId": 27,
+                "name": "Trang_Baby2",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/27/1655800489960.png",
+                "address": "0xf33ce2c3719e75fce5ba4ce0bb14ce4296850d7d"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 100,
+                    "price": "1.000000",
+                    "tokenPrice": "USDT",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "0.975610",
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 1
+        },
+        {
+            "nftId": 16,
+            "name": "NFT auction hanh test 2",
+            "category": 4,
+            "standardType": 1,
+            "description": "NFT auction hanh test 2NFT auction hanh test 2NFT auction hanh test 2",
+            "marketNftStatus": 5,
+            "tokenPrice": "USDT",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-preview/8/1655786375638.png",
+            "tokenId": "3",
+            "price": "10.0000000000",
+            "totalActivities": "9",
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 8,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/null",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0xa4cc877639e4ce0d3949092c1b5513b9fdf8a949"
+            },
+            "collection": {
+                "name": "Collection hanh test 1",
+                "address": "0x0FE00877C8673BAb622F558bDE9c3DacFa1D058d",
+                "avatar": "https://storage.xanalia.com/output/user-collective/8/1655785827069.png"
+            },
+            "owner": {
+                "userId": 8,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0xa4cc877639e4ce0d3949092c1b5513b9fdf8a949"
+            },
+            "saleData": {
+                "fixPrice": null,
+                "auction": {
+                    "auctionId": 3,
+                    "tokenPrice": "USDT",
+                    "status": 3,
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+                    "highestPrice": "10.0000000000",
+                    "startPrice": "10.0000000000",
+                    "endPrice": "0.0000000000",
+                    "stepPrice": "0.0000000000",
+                    "startTime": "2022-06-21T04:44:18.000Z",
+                    "endTime": "2022-06-22T04:59:18.000Z",
+                    "highestBidder": "0xc9217818aa2dc5472f4e3ec1241bff76ff44d7d9"
+                }
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 15,
+            "name": "NFT hanh test auction 1",
+            "category": 3,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 1,
+            "tokenPrice": null,
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/8/1655786240557_1.gif",
+            "tokenId": "2",
+            "price": null,
+            "totalActivities": "5",
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 8,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/null",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0xa4cc877639e4ce0d3949092c1b5513b9fdf8a949"
+            },
+            "collection": {
+                "name": "Collection hanh test 1",
+                "address": "0x0FE00877C8673BAb622F558bDE9c3DacFa1D058d",
+                "avatar": "https://storage.xanalia.com/output/user-collective/8/1655785827069.png"
+            },
+            "owner": {
+                "userId": 8,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0xa4cc877639e4ce0d3949092c1b5513b9fdf8a949"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 123,
+                    "price": "1000.000000",
+                    "tokenPrice": "USDT",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "1000.000000",
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 41,
+            "name": "33333333333",
+            "category": 4,
+            "standardType": 1,
+            "description": "fdgd",
+            "marketNftStatus": 1,
+            "tokenPrice": "ETH",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-preview/24/1655802181912.png",
+            "tokenId": "87",
+            "price": null,
+            "totalActivities": "5",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 24,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/24/1655865066066.jpeg",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x48bbe8a2fde189f49ccec2d76fcc93294f4c8974"
+            },
+            "collection": {
+                "name": "XANALIA_721",
+                "address": "0x46989ae6209b6666fe633deec68eaad8f451e921",
+                "avatar": "https://storage.xanalia.com/user-collective/xanalia/default/collection.png"
+            },
+            "owner": {
+                "userId": 24,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/24/1655865066066.jpeg",
+                "address": "0x48bbe8a2fde189f49ccec2d76fcc93294f4c8974"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 114,
+                    "price": "2.000000",
+                    "tokenPrice": "ETH",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "1.951220",
+                    "networkTokenId": 4,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 112,
+            "name": "Trang Check 2",
+            "category": 1,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 2,
+            "tokenPrice": null,
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/22/1655865992523_1.jpeg",
+            "tokenId": "2",
+            "price": "0.0100000000",
+            "totalActivities": "5",
+            "totalLike": 0,
+            "network": {
+                "networkName": "BSC",
+                "networkId": 3,
+                "avatar": "https://storage.xanalia.com/icon/bsc_icon.svg"
+            },
+            "creator": {
+                "userId": 22,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/22/1655882327982.png",
+                "name": "Trang_Trang",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x531da87856b5b3ae6754522f1d4c70547945ef78"
+            },
+            "collection": {
+                "name": "Trang",
+                "address": "0x1644EbE0e498e98C121d0bD3D57C46f019a98763",
+                "avatar": "https://storage.xanalia.com/output/user-collective/22/1655863930592.jpeg"
+            },
+            "owner": {
+                "userId": 16,
+                "name": "Trang_Lyss",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0x0fbe278720b77f4841fc31eb3847606cc682f7d6"
+            },
+            "saleData": {
+                "fixPrice": null,
+                "auction": {
+                    "auctionId": 27,
+                    "tokenPrice": "BUSD",
+                    "status": 1,
+                    "networkTokenId": 1,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/4510.png",
+                    "highestPrice": "0.0100000000",
+                    "startPrice": "0.0100000000",
+                    "endPrice": "0.0000000000",
+                    "stepPrice": "0.0000000000",
+                    "startTime": "2022-06-22T03:02:24.000Z",
+                    "endTime": "2022-06-23T03:19:24.000Z",
+                    "highestBidder": ""
+                }
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/4510.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 9,
+            "name": "Test NFT flow BSC",
+            "category": 2,
+            "standardType": 1,
+            "description": "Test 1",
+            "marketNftStatus": 1,
+            "tokenPrice": "USDC",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/4/1655785754379_1.jpeg",
+            "tokenId": "1",
+            "price": null,
+            "totalActivities": "4",
+            "network": {
+                "networkName": "Polygon",
+                "networkId": 2,
+                "avatar": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+            },
+            "creator": {
+                "userId": 4,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "name": "Testprofile",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "collection": {
+                "name": "Test BSC",
+                "address": "0x7cBf3e87c38877E9Cd9266DA0A36Ed738E5aa556",
+                "avatar": "https://storage.xanalia.com/output/user-collective/4/1655785608456.jpeg"
+            },
+            "owner": {
+                "userId": 4,
+                "name": "Testprofile",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 13,
+                    "price": "50.000000",
+                    "tokenPrice": "USDC",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "47.619048",
+                    "networkTokenId": 7,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 1,
+            "name": "122",
+            "category": 1,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 3,
+            "tokenPrice": "USDT",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/3/1655784899892_1.jpeg",
+            "tokenId": "83",
+            "price": "1.0000000000",
+            "totalActivities": "3",
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 3,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/null",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x9b500a4b354914d420c3d1497aee4ba9d45b7df0"
+            },
+            "collection": {
+                "name": "XANALIA_721",
+                "address": "0x46989ae6209b6666fe633deec68eaad8f451e921",
+                "avatar": "https://storage.xanalia.com/user-collective/xanalia/default/collection.png"
+            },
+            "owner": {
+                "userId": 3,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0x9b500a4b354914d420c3d1497aee4ba9d45b7df0"
+            },
+            "saleData": {
+                "fixPrice": null,
+                "auction": {
+                    "auctionId": 1,
+                    "tokenPrice": "USDT",
+                    "status": 4,
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+                    "highestPrice": "1.0000000000",
+                    "startPrice": "1.0000000000",
+                    "endPrice": "0.0000000000",
+                    "stepPrice": "0.0000000000",
+                    "startTime": "2022-06-21T04:19:55.900Z",
+                    "endTime": "2022-06-21T04:34:55.900Z",
+                    "highestBidder": ""
+                }
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 86,
+            "name": "Sam 1123",
+            "category": 1,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 1,
+            "tokenPrice": null,
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/17/1655807034162_1.jpeg",
+            "tokenId": "1",
+            "price": null,
+            "totalActivities": "3",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Polygon",
+                "networkId": 2,
+                "avatar": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+            },
+            "creator": {
+                "userId": 17,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/17/1655806855832.jpeg",
+                "name": "Hanh.Phan_Polygon",
+                "facebookLink": null,
+                "instagramLink": "https://www.instagram.com/",
+                "twitterLink": "Samme2010197",
+                "address": "0xea631ce3eccf6b3506857cbba7e5ead1c752a1ca"
+            },
+            "collection": {
+                "name": "Collection 123",
+                "address": "0xDc75efE0f14449A0f56d1ECe24A23902CE04054c",
+                "avatar": "https://storage.xanalia.com/output/user-collective/17/1655806405048.jpeg"
+            },
+            "owner": {
+                "userId": 17,
+                "name": "Hanh.Phan_Polygon",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/17/1655806855832.jpeg",
+                "address": "0xea631ce3eccf6b3506857cbba7e5ead1c752a1ca"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 194,
+                    "price": "0.001000",
+                    "tokenPrice": "MATIC",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "0.001000",
+                    "networkTokenId": 6,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 91,
+            "name": "Checking Profile",
+            "category": 1,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 1,
+            "tokenPrice": "USDC",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/4/1655807743475_1.jpeg",
+            "tokenId": "5",
+            "price": null,
+            "totalActivities": "2",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Polygon",
+                "networkId": 2,
+                "avatar": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+            },
+            "creator": {
+                "userId": 4,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "name": "Testprofile",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "collection": {
+                "name": "Test BSC",
+                "address": "0x7cBf3e87c38877E9Cd9266DA0A36Ed738E5aa556",
+                "avatar": "https://storage.xanalia.com/output/user-collective/4/1655785608456.jpeg"
+            },
+            "owner": {
+                "userId": 4,
+                "name": "Testprofile",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 203,
+                    "price": "45.000000",
+                    "tokenPrice": "USDC",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "43.902439",
+                    "networkTokenId": 7,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 94,
+            "name": "Test 003",
+            "category": 1,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 1,
+            "tokenPrice": "USDT",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-image/4/1655808291799_1.jpeg",
+            "tokenId": "10",
+            "price": null,
+            "totalActivities": "2",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 4,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "name": "Testprofile",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "collection": {
+                "name": "Ether Collection",
+                "address": "0x937f2ea4aE22640cfa5c040936Ff65954bF1ABd4",
+                "avatar": "https://storage.xanalia.com/output/user-collective/4/1655806003830.jpeg"
+            },
+            "owner": {
+                "userId": 4,
+                "name": "Testprofile",
+                "avatar": "https://storage.xanalia.com/output/user-avatar/4/1655802357466.jpeg",
+                "address": "0x6e714663acf66913df3dc4e5d417954420c1f9e5"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 213,
+                    "price": "16.000000",
+                    "tokenPrice": "USDT",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "15.609756",
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 0
+        },
+        {
+            "nftId": 104,
+            "name": "NFT Video",
+            "category": 4,
+            "standardType": 1,
+            "description": "",
+            "marketNftStatus": 1,
+            "tokenPrice": "USDT",
+            "mediaUrl": "https://storage.xanalia.com/output/nft-preview/2/1655863839322.jpeg",
+            "tokenId": "100",
+            "price": null,
+            "totalActivities": "2",
+            "totalLike": 0,
+            "network": {
+                "networkName": "Ethereum",
+                "networkId": 1,
+                "avatar": "https://storage.xanalia.com/icon/eth_icon.svg"
+            },
+            "creator": {
+                "userId": 2,
+                "description": null,
+                "avatar": "https://storage.xanalia.com/null",
+                "name": "",
+                "facebookLink": null,
+                "instagramLink": null,
+                "twitterLink": null,
+                "address": "0x572bd456d9febbc07a53b2f5f3805bbfce190fee"
+            },
+            "collection": {
+                "name": "XANALIA_721",
+                "address": "0x46989ae6209b6666fe633deec68eaad8f451e921",
+                "avatar": "https://storage.xanalia.com/user-collective/xanalia/default/collection.png"
+            },
+            "owner": {
+                "userId": 2,
+                "name": "",
+                "avatar": "https://storage.xanalia.com/null",
+                "address": "0x572bd456d9febbc07a53b2f5f3805bbfce190fee"
+            },
+            "saleData": {
+                "fixPrice": {
+                    "id": 231,
+                    "price": "10.000000",
+                    "tokenPrice": "USDT",
+                    "action": 0,
+                    "status": 1,
+                    "originalPrice": "9.756098",
+                    "networkTokenId": 5,
+                    "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                },
+                "auction": null
+            },
+            "tokenPriceIcon": "https://s2.coinmarketcap.com/static/img/coins/64x64/825.png",
+            "isLike": 0
+        }
+    ],
+    "count": 58
+}

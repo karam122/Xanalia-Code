@@ -1,0 +1,33 @@
+@import '@/styles/_mixins';
+
+.nft-create-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.8rem;
+
+
+    @media (max-width: 1665px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 1365px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 1199px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 991px) {
+        gap: 0.5rem;
+
+      }
+      @media (max-width: 767px) {
+        gap: 0.5rem;
+
+      }
+      
+    @include respond(phone) {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,191 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.collection-card {
+    border-radius: $border-radius-01-width;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba($boxshadow-01-color, 0.5);
+
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        box-shadow: 0 0 8px 0 rgba($boxshadow-02-color, 0.25);
+        transform: translateY(-2px);
+    }
+
+    position: relative;
+
+    // card header
+    &__header {
+        position: relative;
+
+        &:before {
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: (1 / 2) * 100%;
+        }
+
+        img[src=''],
+        img:not([src]) {
+            visibility: hidden;
+        }
+
+        &-collection-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(black, 0.1);
+        }
+
+        &-collection-fill {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-owner-image {
+            border-radius: 100%;
+            // overflow: hidden;
+            width: 76px;
+            height: 76px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            @include respond(tab-port) {
+                width: 56px;
+                height: 56px;
+            }
+
+            @include respond(phone) {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+    // card body
+    &__body {
+        padding: 10px;
+        padding-top: 48px;
+
+        @include respond(phone) {
+            padding-top: 32px;
+            padding-bottom: 4px;
+        }
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__owner-name {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        color: #56bbf8;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__collection-name {
+        margin-bottom: 10px;
+        display: inline;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        position: relative;
+
+        &_name {
+            overflow: hidden;
+            display: inline-block;
+            text-overflow: ellipsis;
+            width: 130px;
+            white-space: nowrap;
+        }
+
+        @include respond(tab-land) {
+            font-size: 14px;
+        }
+    }
+
+    &__price-top-amount {
+        margin-left: auto;
+        color: $text-03-color;
+    }
+
+    // card footer
+    &__footer {
+        position: relative;
+        // height: 48px;
+        padding: 8px;
+    }
+
+    &__chains {
+        display: flex;
+        flex-direction: column;
+        // position: absolute;
+        // left: 10px;
+        // bottom: 10px;
+        width: 23px;
+        height: 23px;
+
+        & > :not(:last-child) {
+            margin-bottom: 10px !important;
+        }
+    }
+
+    &__items-quantity {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #a660d8;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
+
+.artist {
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 5px;
+        right: -15px;
+        $w: 15px;
+        width: $w;
+        height: $w;
+        // background-color: $primary-color;
+        color: #fff;
+        background-image: url('/svgs/escutcheon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        // box-shadow: 0 0 0 2px $primary-color;
+    }
+}

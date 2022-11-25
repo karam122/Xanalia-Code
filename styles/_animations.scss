@@ -1,0 +1,46 @@
+@keyframes loading-keyframes-1 {
+    0% {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-color: $primary-color;
+    }
+
+    100% {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-color: rgba($primary-color, 0);
+    }
+}
+
+@keyframes loading-keyframes-2 {
+    0% {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-color: $state-color--01;
+    }
+
+    100% {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-color: rgba($state-color--01, 0);
+    }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

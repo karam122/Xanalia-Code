@@ -1,0 +1,19 @@
+@import '@/styles/_variables';
+
+.nav-page {
+    display: flex;
+    justify-content: center;
+
+    > ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        > li {
+            > a {
+                display: inline-block;
+                padding: 6px calc(25px + 16px);
+            }
+        }
+    }
+}

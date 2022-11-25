@@ -1,0 +1,160 @@
+@import '@/styles/_variables.scss';
+
+.main {
+    //filter-header
+    
+    .filter-page {
+        position: sticky;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3.6rem;
+        margin-top: 5px;
+        top: 52px;
+        z-index: 10;
+        background-color: $text-05-color;
+        height: 40px;
+    }
+
+    .form-btn {
+        display: flex;
+    }
+
+    .view-btn-first {
+        width: 36px;
+        height: 36px;
+        position: relative;
+        border: 1px solid $border-15-color;
+        border-radius: 3px 0px 0px 3px;
+        cursor: pointer;
+        &:hover {
+            background-color: $background-13-color;
+        }
+    }
+
+    .view-btn-right {
+        width: 36px;
+        height: 36px;
+        position: relative;
+        border: 1px solid $border-15-color;
+        border-radius: 0px 3px 3px 0px;
+        cursor: pointer;
+        &:hover {
+            background-color: $background-13-color;
+        }
+    }
+    .form-btn-left {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+    .form-btn-right {
+        position: absolute;
+        top: 35%;
+        left: 32%;
+    }
+
+    .filter-img {
+        margin-left: 15px;
+    }
+
+    .drop-down {
+        button::after {
+             content: none;
+         }
+         .menu-show-items {
+            font-size: 14px;
+            padding: 0;
+            transform: rotate(20deg);
+        }
+     }
+    
+    .drop-down-list {
+        width: 170px;
+        font-size: 14px;
+         font-weight: 400;
+         margin-left: 5px;
+         height: 36px;
+         background: $text-05-color;
+         color: $text-21-color;
+         border-color: $border-15-color;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         &:focus {
+             background: $text-05-color;
+             color: $text-21-color;
+             box-shadow: none !important;
+             background-color: $background-14-color;
+         }
+         &:hover {
+             border-color: $border-14-color;
+             background-color: $background-14-color;
+         }
+     }
+     .filter-items {
+         height: 41px;
+         align-items: center;
+         display: flex;
+         width: 168px;
+         &:hover {
+             background: transparent;
+             color: $border-14-color;
+             transform: translateX(2px);
+             transition: all .3s ease;
+         }
+         &:nth-child(1) {
+            border-bottom: 1px solid $border-16-color
+         }
+         &:nth-child(2) {
+            border-bottom: 1px solid $border-16-color
+         }
+
+     }
+     .filter-items__active {
+        height: 41px;
+        align-items: center;
+        display: flex;
+        background-color: $border-14-color;
+        &:hover {
+            background: transparent;
+            color: $border-14-color;
+            transform: translateX(2px);
+            transition: all .3s ease;
+        }
+        &:nth-child(1) {
+            border-bottom: 1px solid $border-16-color
+         }
+         &:nth-child(2) {
+            border-bottom: 1px solid $border-16-color
+         }
+    }
+
+    .dot-items {
+        content: "";
+        background: $text-21-color;
+        height: 5px;
+        width: 5px;
+        border-radius: 20px;
+        display: block;
+        margin-right: 8px;
+        transition: all .3s ease;
+    }
+
+
+    //content-page
+    .content-card {
+        padding-top: 1rem;
+    }
+
+    //Pagination
+
+    .auction-ranking-pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        padding-right: 3.6rem;
+    }
+
+}
+

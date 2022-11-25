@@ -1,0 +1,32 @@
+@import '@/styles/variables';
+
+.modal-sell {
+    &__body {
+        .basePrice-select {
+            width: fit-content;
+            max-width: 100px;
+        }
+        .time-auction-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+}
+
+.fee {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: right;
+
+    /* DARK COLORS/3 */
+
+    color: #777E90;
+    text-align: right;
+
+}

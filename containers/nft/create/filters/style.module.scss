@@ -1,0 +1,26 @@
+.filter-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @media (max-width: 1665px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 1365px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 1199px) {
+        gap: 1rem;
+
+      }
+      @media (max-width: 991px) {
+        gap: 0.5rem;
+
+      }
+      @media (max-width: 767px) {
+        gap: 0.5rem;
+
+      }
+}

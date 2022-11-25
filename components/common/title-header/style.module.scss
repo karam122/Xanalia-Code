@@ -1,0 +1,58 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.title-header {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(black, 0.1);
+    padding-bottom: 8px;
+
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        flex: 1;
+        > h4 {
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+
+    &__right {
+        overflow: hidden;
+
+        &__view-all {
+            $arrow-size: 20px;
+            $arrow-space: 8px;
+
+            margin-left: $arrow-size + $arrow-space;
+            color: $dark-color--03;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+            transform: translateX($arrow-size + $arrow-space);
+
+            &:hover,
+            &:focus {
+                color: $primary-color;
+                transform: translateX(0);
+            }
+
+            > svg {
+                margin-left: $arrow-space;
+                width: $arrow-size;
+                height: $arrow-size;
+            }
+
+            @include respond(phone) {
+                margin-left: 0;
+                font-size: 12px;
+            }
+        }
+    }
+}

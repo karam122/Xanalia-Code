@@ -1,0 +1,20 @@
+@import '@/styles/_variables';
+
+.toggle-button {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: $light-color--01;
+    border-radius: 3px;
+    border: 1px solid $primary-color;
+    transition: all 0.3s;
+
+    &:hover,
+    &--active {
+        background-color: $primary-color;
+        font-weight: 700;
+        color: $light-color--01;
+    }
+}

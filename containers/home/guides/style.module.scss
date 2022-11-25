@@ -1,0 +1,29 @@
+@import '@/styles/_variables';
+
+.guides-section {
+    background-color: $light-color--02;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    > h1,
+    > p {
+        text-align: center;
+    }
+
+    > h1 {
+        margin-bottom: 16px;
+        color: black;
+    }
+
+    > p {
+        margin-bottom: 30px;
+        color: $dark-color--03;
+    }
+
+    > div {
+        > div {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+$item-space: 15px;
+$items-per-row: 5;
+$items-per-row-mobile: 2;
+$items-per-row-tab-land: 3;
+
+.collection-ranking {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $item-space * -1;
+    padding: 0px;
+
+    @include respond(phone) {
+        padding: 0;
+    }
+
+    > div {
+        margin: $item-space;
+        width: calc(100% / $items-per-row - $item-space * 2);
+
+        @include respond(tab-land) {
+            width: calc(100% / $items-per-row-tab-land - $item-space * 2);
+        }
+
+        @include respond(phone) {
+            width: calc(100% / $items-per-row-mobile - $item-space * 2);
+        }
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        margin-right: 82px;
+        @include respond(phone) {
+            margin-right: 0;
+            font-size: 12px;
+        }
+
+        > span {
+            display: inline-block;
+            margin: 0 12px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &[class*='active'] {
+                color: $primary-color;
+            }
+        }
+    }
+}

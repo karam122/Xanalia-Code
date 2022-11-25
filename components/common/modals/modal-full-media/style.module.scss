@@ -1,0 +1,33 @@
+@import '@/styles/mixins.scss';
+
+.view-full-dialog {
+background-color: transparent !important;
+    div[class^="modal-content"] {
+        background: transparent !important;
+        max-height: 100vh;
+        border: 0;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+    }
+   
+    .close-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        // 
+        z-index: 10;
+        cursor: pointer;
+    }
+    
+
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

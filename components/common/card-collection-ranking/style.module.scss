@@ -1,0 +1,100 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.card-collection-ranking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > span {
+        line-height: 1;
+        color: $text-12-color;
+        display: block;
+        min-width: 42px;
+        @include respond(phone) {
+            min-width: 22px;
+        }
+        text-align: center;
+    }
+
+    &__avatar {
+        position: relative;
+
+        > div {
+            width: 69px;
+            height: 69px;
+            background-color: $light-color--03;
+            border-radius: 100%;
+            overflow: hidden;
+
+            > img {
+                width: 100%;
+                height: 100%;
+
+                &[src=''],
+                &:not([src]) {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        > svg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 25px;
+            height: 25px;
+        }
+
+        @include respond(phone) {
+            > div {
+                @include respond(phone) {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            > svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &__content {
+        flex: 1;
+        margin-left: 12px;
+
+        > h6,
+        > p {
+            line-height: 1;
+        }
+
+        > h6 {
+            margin-bottom: 10px;
+        }
+
+        > p {
+            margin-bottom: 0;
+            color: $dark-color--03;
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        svg {
+            $w: 20px;
+            width: $w;
+            height: $w;
+        }
+
+        @include respond(phone) {
+            font-size: 14px;
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

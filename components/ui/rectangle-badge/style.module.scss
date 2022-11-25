@@ -1,0 +1,40 @@
+@import '@/styles/_variables';
+
+.badge-container {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: 1px solid $primary-color--1;
+    position: relative;
+}
+
+.badge-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid $text-09-color;
+    background-color: $light-color--01;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background-color: $text-09-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover::before {
+        background-color: $light-color--01;
+    }
+    &:hover {
+        background-color: $primary-color;
+        border: none;
+    }
+}

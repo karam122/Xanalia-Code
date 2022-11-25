@@ -1,0 +1,262 @@
+@import '@/styles/_mixins';
+
+.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-left-sidebar-open {
+    margin-left: $sidebar-width;
+    @include respond(tab-land) {
+        margin-left: 0;
+    }
+}
+
+#main-content {
+    transition: all 0.3s;
+}
+
+.panel {
+    padding: 1rem;
+    background-color: $light-color--01;
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    .form-title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-title {
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 18px;
+        color: $text-09-color;
+    }
+
+    .sub-title {
+        font-size: 12px;
+        color: $text-10-color;
+    }
+}
+
+.input-group-text {
+    background-color: $light-color--01;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-loading {
+    min-width: 120px;
+    position: relative;
+}
+
+.datetime-picker {
+    input {
+        display: block;
+        width: 100%;
+        padding: 6.5px 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+            border-color: $primary-color--1;
+        }
+    }
+    fieldset {
+        display: none;
+    }
+}
+.countdown {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 4px;
+
+    & > div {
+        $w: 35px;
+
+        height: $w;
+        width: $w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $w / 4;
+        font-weight: 700;
+        border: 1px solid $primary-color--1;
+    }
+}
+
+.m-w-100 {
+    max-width: 100px;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.action-button {
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 12px;
+    // text-transform: uppercase;
+    color: $primary-color--2;
+    box-shadow: inset 0px 0px 0px 2px $primary-color--2;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    min-height: 40px;
+    min-width: 100px;
+    cursor: pointer;
+    &:hover {
+        background: $primary-color--1;
+        border: none !important;
+        color: $light-color--01 !important;
+        box-shadow: none;
+    }
+
+    @include respond(phone) {
+        font-size: 12px;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.min-h-\[60vh\] {
+    min-height: 60vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.modal-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.token-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
+}
+.w-fit {
+    width: fit-content;
+}
+.mt-8 {
+    margin-top: 32px;
+}
+
+.loading-homepage {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & + div#main-layout {
+        display: none;
+    }
+}
+
+.link-wraper {
+    a {
+        color: #0a58ca;
+    }
+}
+.text-1-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.maintain-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        font-size: 48px;
+        color: rgba(34, 128, 225, 1);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        // font-size: 32px;
+        // color: rgba(34, 128, 225, 1);
+        // font-weight: 600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        text-align: left;
+        font-weight: 500;
+        // word-break: break-word;
+        white-space: pre-line;
+    }
+    button {
+        padding: 8px 16px;
+        border: 0;
+        outline: 0;
+    }
+
+    textarea {
+        width: 100%;
+        text-align: center;
+        outline: none;
+        resize: none;
+        overflow: hidden;
+        border: none;
+    }
+}

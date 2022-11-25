@@ -1,0 +1,278 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.collection-card {
+    border-radius: $border-radius-01-width;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba($boxshadow-01-color, 0.5);
+
+    transition: all 0.3s ease 0s;
+    &:hover {
+        box-shadow: 0 0 8px 0 rgba($boxshadow-02-color, 0.25);
+        transform: translateY(-2px);
+    }
+    position: relative;
+
+    // card header
+    &__header {
+        position: relative;
+        &-collection-image {
+            // height: 204px;
+            @include respond(tab-land) {
+                // height: 120px;
+            }
+            object-fit: cover;
+        }
+
+        &-collection-fill {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 2/1;
+        }
+
+        &-owner-image {
+            border-radius: 100%;
+            // overflow: hidden;
+            width: 76px;
+            height: 76px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+            @include respond(tab-port) {
+                width: 56px;
+            height: 56px;
+            }
+            @include respond(phone) {
+                width: 36px;
+            height: 36px;
+            }
+
+            
+        }
+    }
+
+    // card body
+    &__body {
+        padding: 52px 36px 52px 36px;
+        @include respond(tab-port) {  
+            padding: 51px 36px 52px 36px;
+        }
+
+        @include respond(phone) {  
+            padding: 31px 10px 0px 10px;
+            padding-top: 31px
+        }
+        // height: 150px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__owner-name {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        color: #56bbf8;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    &__collection-name {
+        margin-bottom: 10px;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        word-break: break-word;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        position: relative;
+        
+        &_name {
+            overflow: hidden;
+            display: inline-block;
+            text-overflow: ellipsis;
+            width: 130px;
+            white-space: nowrap;
+    
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                bottom: 7px;
+                right: -12px;
+                $w: 15px;
+                width: $w;
+                height: $w;
+        
+                @include respond(phone) {
+                    $w: 12px;
+                    width: $w;
+                    height: $w;
+                    right: -3px;
+                }
+                // background-color: $primary-color;
+                color: #fff;
+                background-image: url('/svgs/escutcheon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 2;
+                // box-shadow: 0 0 0 2px $primary-color;
+
+
+            }
+        }
+
+        @include respond(phone) {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+
+    }
+
+    &__price-top-amount {
+        margin-left: auto;
+        color: $text-03-color;
+    }
+
+    // card footer
+    &__footer {
+        padding: 4px 12px 6px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__networks {
+            bottom: 6px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            // background-color: red;
+           
+        }
+
+        @include respond(phone) {
+            padding: 16px 8px 8px 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            &__networks {
+                bottom: unset;
+                position: static;
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                align-items: center;
+                // background-color: red;
+               
+            }
+
+            
+        }
+    }
+    &__chains {
+        display: flex;
+        flex-direction: column;
+        // position: absolute;
+        // left: 10px;
+        // bottom: 10px;
+        width: 23px;
+        height: 23px;
+
+        @include respond(phone) {  
+            width: 18px;
+            height: 18px;
+        }
+        flex-shrink: 0;
+        & > :not(:last-child) {
+            margin-bottom: 10px !important;
+        }
+    }
+
+    &__items-quantity {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        color: #a660d8;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+
+        @include respond(phone) { 
+            position: static;
+            bottom: unset;
+            right: unset;
+            transform: translateX(-0);
+            line-height: 1;
+            padding-top: 8px;
+
+        }
+    }
+    &__items-status {
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+        color: #ff6e44;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 23px;
+
+        @include respond(phone) { 
+            position: static;
+            bottom: unset;
+            right: unset;
+        }
+    }
+}
+
+// .artist {
+//     // position: relative;
+//     display: inline-block;
+//     // height: 32px;
+
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         display: block;
+//         bottom: 86px;
+//         right: 15px;
+//         $w: 22px;
+//         width: $w;
+//         height: $w;
+
+//         @include respond(phone) {
+//             $w: 12px;
+//             width: $w;
+//             height: $w;
+//         }
+//         // background-color: $primary-color;
+//         color: #fff;
+//         background-image: url('/svgs/escutcheon.svg');
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+//         z-index: 2;
+//         // box-shadow: 0 0 0 2px $primary-color;
+//     }
+// }

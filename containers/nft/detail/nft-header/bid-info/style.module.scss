@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+
+.bid-info {
+    // padding: 1rem;
+    // border: 1px solid $dark-color--04;
+    // border-radius: 0.25rem;
+    margin-bottom: 1rem;
+
+    .bid-end-line {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+}

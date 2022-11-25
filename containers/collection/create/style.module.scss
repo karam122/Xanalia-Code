@@ -1,0 +1,166 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.collection-page {
+    background-color: $light-color--02;
+    padding: 45px 54px;
+
+    @include respond(phone) {
+        padding: 1rem;
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 30px;
+    }
+
+    &__time-zone {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    &__g-panel {
+        display: flex;
+        width: 100%;
+        gap: 48px;
+
+        @include respond(phone) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        > * {
+            flex: 1;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__panel {
+        display: block;
+        background-color: white;
+        padding: 17px 20px;
+        position: relative;
+
+        .demo{
+            background: url('../../../public/svgs/error-m.svg') no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 58px;
+        }
+
+        .error-message{
+            position: absolute;
+            top: 59px;
+            right: -45%;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        *[class*='form-control'] {
+            border-color: $primary-color--3;
+            font-size: 15px;
+            position: relative;
+
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary-color;
+            }
+
+            &::placeholder {
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+
+
+    }
+
+    &__contract-address {
+        display: flex;
+        align-items: stretch;
+
+        > button {
+            margin-left: 20px;
+            width: 140px;
+
+            font-weight: 700;
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: flex-start;
+
+        @include respond(phone) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        > div {
+            flex: 1;
+
+            &:nth-child(1) {
+                display: flex;
+                gap: 2rem;
+
+                > div {
+                    flex: 1;
+                }
+
+                @include respond(phone) {
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+
+            &:nth-child(2) {
+                display: flex;
+                justify-content: flex-end;
+                gap: 1rem;
+
+                @include respond(phone) {
+                    width: 100%;
+                }
+
+                > button {
+                    width: 128px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+
+                    &[class*='btn-primary'] {
+                        background-color: $primary-color;
+                        border-color: $primary-color;
+                    }
+                    &[class*='btn-outline-primary'] {
+                        color: $primary-color;
+                        border-color: $primary-color;
+                        font-weight: 700;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.space-y {
+    margin-bottom: 26px;
+}

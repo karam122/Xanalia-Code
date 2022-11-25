@@ -1,0 +1,12 @@
+.network-price--top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.network-price--bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}

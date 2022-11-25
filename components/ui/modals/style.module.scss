@@ -1,0 +1,58 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins.scss';
+
+.custom-modal {
+    // backdrop-filter: blur(8px);
+
+    // &__backdrop {
+    //     background: transparent;
+    // }
+
+    &__dialog {
+        > div {
+            border-radius: 15px;
+            border-width: 0;
+        }
+       @include respond(phone) {
+            max-width: calc(100vw - 1rem);
+            
+            div[class="modal-content"] {
+                max-width: calc(100vw - 1rem) !important;
+            }
+       }
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+
+        > div {
+            flex: 1;
+        }
+    }
+
+    &__body {
+        position: relative;
+        padding: 1rem 2rem 2rem;
+    }
+
+    &__close-header,
+    &__close-body {
+        color: $text-06-color;
+        width: 22px;
+        height: 22px;
+
+        cursor: pointer;
+    }
+
+    &__close-header {
+        position: relative;
+    }
+
+    &__close-body {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}

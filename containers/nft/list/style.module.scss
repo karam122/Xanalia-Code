@@ -1,0 +1,89 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.list-nft {
+    background-color: $light-color--02;
+    padding: 45px 54px;
+    min-height: 600px;
+
+    @include respond(tab-land) {
+        padding: 1rem;
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__add-new {
+        width: 240px;
+        height: 40px;
+        background-color: $primary-color;
+        color: #fff;
+        &:hover {
+            color: #f1f1f1;
+        }
+        flex-shrink: 0;
+    }
+
+    &__content {
+        padding: 16px 24px;
+        background-color: white;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+
+        &__button {
+            > button {
+                padding: 10px 24px;
+                border-radius: 0;
+                background-color: transparent;
+                border-color: transparent;
+                color: black;
+
+                &[class*='active'],
+                &:hover,
+                &:focus {
+                    background-color: $background-04-color;
+                    border-color: $background-04-color;
+                    color: black;
+                }
+            }
+        }
+
+        &__collection {
+            display: flex;
+            align-items: center;
+
+            > p {
+                margin-bottom: 0;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    // &__table {
+    // }
+
+    &__pagination {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 32px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}

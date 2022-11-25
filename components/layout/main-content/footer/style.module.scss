@@ -1,0 +1,172 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.wrapper-outer{
+    background: #000;
+
+    .wrapper{
+        max-width: 1300px;
+        width: 95%;
+        margin: auto;
+
+        .footer {
+            display: flex;
+            padding: 70px 0;
+            justify-content: space-between;
+            background-color: $background-02-color;
+            gap: 70px;
+
+            @media (max-width:1199px){
+                padding: 50px 0;
+                gap: 40px;
+            }
+
+            @media (max-width:991px){
+                width: 95%;
+                margin: auto;
+                gap: 25px;
+            }
+            @media (max-width:767px){
+                flex-direction: column;
+                padding: 35px 0;
+            }
+
+            &__logo-text {
+                text-align: center;
+                white-space: nowrap;
+                flex: 2;
+
+                img{
+                    @media (max-width:1199px){
+                        width: 60px;
+                    }
+                    @media (max-width:991px){
+                        width: 50px;
+                    }
+                }
+
+                @include respond(phone) {
+                    white-space: normal;
+                }
+
+                @media (max-width:1199px){
+                    padding-top: 1.5rem;
+                }
+                @media (max-width:767px){
+                    padding-top: 0;
+                }
+            }
+
+            &__text {
+                color: $text-05-color;
+                font-size: 15px;
+                margin-top: 25px;
+                font-weight: 100;
+                font-family: sans-serif;
+
+                @media (max-width:1199px){
+                    font-size: 13px;
+                    margin-top: 20px;
+                }
+                @media (max-width:991px){
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+            }
+
+            &__siteMap-links-group {
+                color: rgba($light-color--01, 0.78);
+                text-decoration: none;
+                flex: 1;
+
+                @media (max-width:1199px){
+                    margin-left: 30px;
+                }
+                @media (max-width:991px){
+                    margin-left: 0;
+                }
+
+                @media (max-width:789px){
+                    color: rgba($light-color--01, 0.78);
+                    text-decoration: none;
+                }
+            }
+
+            &__social-links-group {
+                color: rgba($light-color--01, 0.78);
+                text-decoration: none;
+                flex: 1;
+
+                @media (max-width:789px){
+                    color: rgba($light-color--01, 0.78);
+                    text-decoration: none;
+                }
+            }
+
+            &__links-group {
+                color: rgba($light-color--01, 0.78);
+                text-decoration: none;
+                flex: 1;
+            }
+
+            &__links-title {
+                white-space: nowrap;
+                font-size: 18px;
+                margin-bottom: 10px;
+                
+                @media (max-width:1199px){
+                    font-size: 16px;
+                }
+            }
+
+            &__links-item {
+                display: flex;
+                margin-top: 10px;
+                font-size: 15px;
+
+                @media (max-width:767px){
+                    margin-top: 5px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &__link-item-icon {
+                margin-right: 12px;
+
+                @media (max-width:1199px){
+                    margin-right: 10px;
+                }
+                @media (max-width:991px){
+                    margin-right: 5px;
+                }
+
+                svg{
+                    @media (max-width:1199px){
+                        transform: scale(0.85);
+                    }
+                    @media (max-width:991px){
+                        transform: scale(0.72) translateY(-6px);
+                    }
+                }
+
+            }
+
+            &__link-item-href {
+                @media (max-width:1199px){
+                    font-size: 13px;
+                }
+
+                @media (max-width:991px){
+                    font-size: 12px;
+                }
+
+                &:hover {
+                    color: $text-05-color;
+                }
+            }
+        }
+    }
+}

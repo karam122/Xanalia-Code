@@ -1,0 +1,88 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.dropdown {
+    button::after {
+        content: none;
+    }
+    .menu-show-items {
+        font-size: 14px;
+        padding: 0;
+        transform: rotate(20deg);
+
+        @include respond(phone) {
+            font-size: 12px;
+        }
+    }
+    > button {
+        background: $text-05-color !important;
+        color: $text-21-color !important;
+    }
+}
+
+.dropdown-toggle {
+    width: 170px;
+    font-size: 14px;
+    @include respond(tab-land) {
+        font-size: 12px;
+        width: 150px;
+    }
+    font-weight: 400;
+    background: $text-05-color;
+    color: $text-21-color;
+    border: 1px solid $border-15-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > button {
+        border: none;
+    }
+
+    &:focus {
+        color: $text-21-color !important;
+        box-shadow: none !important;
+        background-color: $background-14-color !important;
+        border-color: $border-14-color !important;
+    }
+    &:hover {
+        border-color: $border-14-color;
+        background-color: $background-14-color;
+        color: $text-21-color;
+    }
+}
+.filter-items {
+    color: $text-21-color;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    width: 170px;
+    &:hover {
+        background: transparent;
+        color: $border-14-color;
+        transform: translateX(2px);
+        transition: all 0.3s ease;
+    }
+    &:not(last-child) {
+        border-bottom: 1px solid $border-16-color;
+    }
+
+    &--active,
+    &--active:hover {
+        align-items: center;
+        display: flex;
+        color: $light-color--01;
+        background-color: $border-14-color;
+        transform: none;
+    }
+}
+
+.dot-items {
+    content: '';
+    background: $text-21-color;
+    height: 5px;
+    width: 5px;
+    border-radius: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}

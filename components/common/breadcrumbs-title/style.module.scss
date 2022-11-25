@@ -1,0 +1,27 @@
+@import '@/styles/_variables';
+
+.breadcrumbs-title {
+    margin-bottom: 3rem;
+    &__title {
+        margin-bottom: 7.5px;
+    }
+
+    &__tags {
+        display: flex;
+
+        > a,
+        > a:not([href]) {
+            position: relative;
+            color: $text-08-color;
+
+            &::after {
+                content: '/';
+                margin: 0 8px;
+            }
+
+            &:last-child::after {
+                content: none;
+            }
+        }
+    }
+}

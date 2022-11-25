@@ -1,0 +1,29 @@
+@import 'mixins';
+
+.crisp-client .cc-kv6t .cc-1xry .cc-ge4v {
+    @media (min-height: 660px) {
+        height: calc(100vh - 110px) !important;
+    }
+}
+
+.crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-bdff {
+    position: relative !important;
+    z-index: 5 !important;
+    // padding-top: 45px !important;
+    background-color: #0062cc !important;
+    background-image: linear-gradient(
+        125deg,
+        #1972f5 -10%,
+        #004ab5 100%
+    ) !important;
+
+    @media (max-width: 640px) {
+        padding-top: 45px !important;
+    }
+}
+
+.crisp-client .cc-kv6t .cc-1xry .cc-ge4v .cc-qqzz {
+    @media (max-height: 650px) and (min-height: 620px) {
+        max-height: 430px !important;
+    }
+}

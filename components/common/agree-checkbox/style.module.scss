@@ -1,0 +1,28 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.agree-checkbox {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 2rem;
+    &__tick {
+        flex-shrink: 0;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+
+        border: 1px solid $border-15-color;
+        border-radius: 6px;
+        position: relative;
+        > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--show {
+            background: $primary-color--1;
+        }
+    }
+}

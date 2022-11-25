@@ -1,0 +1,15 @@
+@import '/styles/variables';
+
+.switch-chain {
+    &__btn {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        border-radius: 50%;
+        overflow: hidden;
+        > svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins.scss';
+
+.collection-page {
+    background-color: $light-color--02;
+    padding: 45px 54px;
+
+    @include respond(phone) {
+        padding: 0px;
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 30px;
+    }
+
+    &__time-zone {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    &__g-panel {
+        display: flex;
+        width: 100%;
+
+        > * {
+            flex: 1;
+            margin-right: 48px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__panel {
+        display: block;
+        background-color: white;
+        padding: 17px 20px;
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        *[class*='form-control'] {
+            border-color: $primary-color--3;
+            font-size: 15px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary-color;
+            }
+
+            &::placeholder {
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__contract-address {
+        display: flex;
+        align-items: stretch;
+
+        > button {
+            margin-left: 20px;
+            width: 140px;
+
+            font-weight: 700;
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        > div {
+            flex: 1;
+
+            &:nth-child(1) {
+                display: flex;
+                margin: -10px;
+
+                > div {
+                    flex: 1;
+                    margin: 10px;
+                }
+            }
+
+            &:nth-child(2) {
+                padding-left: 26px;
+                display: flex;
+                justify-content: flex-end;
+                margin: -5px;
+
+                > button {
+                    margin: 5px;
+                    width: 128px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+
+                    &[class*='btn-primary'] {
+                        background-color: $primary-color;
+                        border-color: $primary-color;
+                    }
+                    &[class*='btn-outline-primary'] {
+                        color: $primary-color;
+                        border-color: $primary-color;
+                        font-weight: 700;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.space-y {
+    margin-bottom: 26px;
+}

@@ -1,0 +1,46 @@
+@import '@/styles/_mixins';
+
+.page {
+    min-height: 80vh;
+
+    &--center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+    }
+
+    &__header {
+        @include respond(tab-port) {
+            margin-top: -16px;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+    }
+
+    &__tabs {
+        button[class*='active'] {
+            font-weight: 700;
+        }
+
+        @include respond(phone) {
+            margin-left: 0;
+            max-width: none;
+        }
+    }
+}
+
+.page__body {
+    position: relative;
+    min-height: 40vh;
+    padding-top: 32px;
+}
+
+.center-page {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

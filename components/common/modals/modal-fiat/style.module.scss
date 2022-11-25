@@ -1,0 +1,21 @@
+@import '/styles/variables';
+
+.modal {
+    padding: 0;
+}
+
+.iframe {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    display: block;
+}
+
+.error-panel {
+    padding: 32px;
+    color: $state-color--04;
+    text-align: center;
+}
+
+.iframe {
+    margin-top: 3rem;
+}

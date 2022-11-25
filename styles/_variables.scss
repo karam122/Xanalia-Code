@@ -1,0 +1,112 @@
+// color
+$primary-color--1: rgba(34, 128, 225, 1);
+$primary-color--2: rgba(86, 187, 248, 1);
+$primary-color--3: rgba(189, 189, 189, 1);
+$primary-color: $primary-color--1;
+
+$state-color--01: rgba(96, 192, 131, 1);
+$state-color--02: rgba(255, 110, 68, 1);
+$state-color--03: rgba(166, 96, 216, 1);
+$state-color--04: rgba(255, 1, 37, 1);
+
+$dark-color--01: rgba(0, 0, 0, 1);
+$dark-color--02: rgba(35, 38, 47, 1);
+$dark-color--03: rgba(119, 126, 144, 1);
+$dark-color--04: rgba(157, 157, 157, 1);
+
+$light-color--01: rgba(255, 255, 255, 1);
+$light-color--02: rgba(246, 247, 251, 1);
+$light-color--03: rgba(243, 243, 243, 1);
+
+$text-01-color: rgb(35, 38, 47);
+$text-02-color: rgb(35, 44, 60);
+$text-03-color: rgb(96, 192, 131);
+$text-04-color: rgb(142, 155, 186);
+$text-05-color: rgb(255, 255, 255);
+$text-06-color: rgb(122, 122, 122);
+$text-07-color: #777e90;
+$text-08-color: #71767d;
+$text-09-color: rgba(63, 70, 116, 1);
+$text-10-color: rgba(120, 126, 134, 1);
+$text-11-color: rgba(176, 177, 184, 1);
+$text-12-color: rgba(122, 126, 153, 1);
+$text-13-color: rgba(213, 213, 213, 1);
+$text-14-color: rgba(129, 135, 142, 1);
+$text-15-color: #777e90;
+$text-16-color: rgba(234, 12, 99, 1);
+$text-17-color: rgb(157, 157, 157, 1);
+$text-18-color: rgba(0, 168, 255, 1);
+$text-19-color: rgb(33, 37, 41);
+$text-20-color: rgba(130, 130, 130, 1);
+$text-21-color: rgb(32, 42, 67);
+$text-22-color: #a660d8;
+$text-23-color: rgb(119, 126, 144);
+$text-24-color: #777e90;
+$text-25-color: rgb(127, 127, 127);
+$text-26-color: #23262F;
+
+// width
+$boxshadow-01-color: rgb(191, 191, 191);
+$boxshadow-02-color: rgb(4, 17, 29);
+
+$border-01-color: rgb(240, 240, 240);
+$border-02-color: #80bdff;
+$border-03-color: #f1f1f1;
+$border-04-color: #ced4da;
+$border-05-color: #86b7fe;
+$border-06-color: #008fff;
+$border-07-color: rgba(173, 173, 173, 1);
+$border-08-color: #e8e8ea;
+$border-09-color: #f6f6f6;
+$border-10-color: #008fff;
+$border-11-color: #007bff;
+$border-12-color: rgb(34, 128, 225);
+$border-13-color: rgba(233, 233, 233, 1);
+$border-14-color: rgb(33, 150, 243);
+$border-15-color: rgb(206, 212, 218);
+$border-16-color: rgb(233, 236, 239);
+$border-17-color: rgb(222, 226, 230);
+
+$background-01-color: rgb(21, 102, 192);
+$background-02-color: #000000;
+$background-03-color: rgba(206, 212, 218, 1);
+$background-04-color: rgba(157, 190, 238, 1);
+$background-05-color: rgba(245, 245, 245, 1);
+$background-06-color: rgb(21, 10, 3);
+$background-07-color: rgba(88, 189, 125, 1);
+$background-08-color: rgba(0, 183, 241, 1);
+$background-09-color: #e7e7e7;
+$background-10-color: rgba(196, 196, 196, 0.2);
+$background-11-color: linear-gradient(180deg, #56bbf8 0%, #2280e1 100%);
+$background-12-color: linear-gradient(180deg, #00c7ff, #008fff),
+  linear-gradient(180deg, #ff006e, #a200ff);
+$background-13-color: rgb(241, 251, 254);
+$background-14-color: rgba(0, 143, 255, 0.1);
+$background-15-color: rgb(247, 251, 255);
+$background-16-color: rgba(196, 196, 196);
+$background-17-color: rgb(169, 169, 169);
+$background-18-color: rgb(244, 247, 252);
+$background-19-color: rgb(243, 243, 243);
+$background-20-color: rgba(185, 196, 225);
+
+// width
+
+$sidebar-width: 250px;
+
+$border-radius-01-width: 13px;
+$border-radius-02-width: 3px;
+$border-radius-03-width: 15px;
+
+$text-shadow--01: 5px 5px 5px #4b4b4b;
+
+$font-family--01: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+  sans-serif;
+
+$shadow-sm: 0 1px 2px 0 rgb(black, 0.05);
+$shadow: 0 1px 3px 0 rgb(black, 0.1), 0 1px 2px -1px rgb(black, 0.1);
+$shadow-md: 0 4px 6px -1px rgb(black, 0.1), 0 2px 4px -2px rgb(black, 0.1);
+$shadow-lg: 0 10px 15px -3px rgb(black, 0.1), 0 4px 6px -4px rgb(black, 0.1);
+$shadow-xl: 0 20px 25px -5px rgb(black, 0.1), 0 8px 10px -6px rgb(black, 0.1);
+$shadow-2xl: 0 25px 50px -12px rgb(black, 0.25);
+$shadow-inner: inset 0 2px 4px 0 rgb(black, 0.05);
+$shadow-none: 0 0 transparent;

@@ -1,0 +1,10 @@
+.initial-sale-container,
+.secondary-market-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.panel-secondary-market {
+    margin-top: 3rem;
+}

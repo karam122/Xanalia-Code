@@ -1,0 +1,31 @@
+@import 'styles/_variables';
+
+.modal-body {
+    padding: 0;
+}
+
+.preview-nft-container {
+    padding: 30px;
+    min-width: 40rem;
+    min-height: 40rem;
+}
+
+.preview-nft__footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.btn-detail,
+.btn-buy {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.btn-detail {
+    background: $background-11-color;
+    border: 0;
+}

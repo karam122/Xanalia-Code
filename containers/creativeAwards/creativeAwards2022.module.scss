@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Helvetica;
+  src: url('https://ik.imagekit.io/xanalia/CollectionMainData/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url('https://ik.imagekit.io/xanalia/CollectionMainData/Helvetica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Helvetica-light;
+  src: url('https://ik.imagekit.io/xanalia/CollectionMainData/Helvetica-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: bebas-neue;
+  src: url('https://ik.imagekit.io/xanalia/CollectionMainData/BebasNeueRegular.ttf') format('truetype');
+}
+
+$black: #000;
+$shadeBlack: #020101;
+$white: #fff;
+
+.creativeAward2022_ {
+  // background-color: red;
+  overflow: auto;
+
+  .content-layout {
+    display: block;
+  }
+
+  #mySidenav {
+    display: none;
+  }
+
+  .divDivider {
+    width: 40%;
+    margin: 19px auto 12px;
+    display: block;
+    border-color: $white;
+
+    @media (max-width:1024px) {
+      margin: 15px auto 0px;
+    }
+  }
+
+  .creativeAwardHeadUI {
+    // background-color: red;
+    background: url('https://ik.imagekit.io/xanalia/Images/creative-Awards-Bg.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+
+    .creativeAwardHead_section {
+      // height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 240px 0;
+      // min-height: 800px;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      @media (max-width:1023px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+        min-height: auto;
+      }
+
+      h3 {
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 24px;
+
+        @media (max-width:767px) {
+          font-size: 19px;
+          width: 90%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-height: 131px;
+
+        @media (max-width:767px) {
+          max-height: 100%;
+          width: 90%;
+        }
+      }
+    }
+
+    .applyNow {
+      z-index: auto;
+      margin-top: 0;
+
+      h1 {
+        color: $white;
+        font-size: 66px;
+        font-weight: 700;
+        line-height: 1;
+
+        @media (max-width:1023px) {
+          font-size: 50px;
+        }
+
+        @media (max-width:520px) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        color: $white;
+        font-size: 19px;
+        font-weight: 800;
+        margin-bottom: 35px;
+
+        @media (max-width:920px) {
+          font-size: 16px;
+        }
+
+      }
+
+      .btn_apply {
+        font-family: "San Francisco", Sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        background-color: #002BAA;
+        border-radius: 100px 100px 100px 100px;
+        box-shadow: 0px 0px 43px 9px #6ec1e4 !important;
+        padding: 13px 0;
+        max-width: 433px;
+        width: 100%;
+        margin-bottom: 60px;
+
+        @media (max-width:920px) {
+          font-size: 21px;
+          margin-bottom: 50px;
+          min-width: 240px;
+          width: auto;
+          font-weight: 400;
+          padding: 15px 0;
+        }
+
+        @media (max-width:767px) {
+          box-shadow: 0px 0px 43px 9px #6ec1e4 !important;
+          font-size: 21px;
+          margin-bottom: 70px;
+          padding: 15px 0;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .creativeAwardBody {
+    .whiteBox {
+      background-color: rgba(255, 255, 255, .92);
+    }
+
+    // creatorsSection
+    .creatorsSection {
+      background: url('https://ik.imagekit.io/xanalia/Images/creative-Awards-Bg.jpg') !important;
+      background-repeat: no-repeat !important;
+      background-position: bottom center !important;
+      background-size: cover !important;
+      background-attachment: fixed !important;
+      padding-bottom: 32px;
+
+      .introBox {
+        padding: 50px 50px 0;
+        width: calc(100% - 397px);
+        margin: 0 auto;
+
+        @media (max-width:1023px) {
+          width: 100%;
+          padding: 25px 0px 0;
+        }
+
+        h2 {
+          background-color: #210202;
+          font-size: 29px;
+          font-weight: 400;
+          letter-spacing: -0.3625px;
+          font-family: Arial, Sans-serif;
+          padding: 7px 5px;
+          color: $white;
+          text-align: center;
+          margin-bottom: 5px;
+
+          @media (max-width:920px) {
+            font-size: 23px;
+          }
+
+          @media (max-width:520px) {
+            letter-spacing: -1px;
+          }
+        }
+
+        p {
+          color: #000;
+          font-family: Helvetica, Sans-serif;
+          font-size: 19px;
+          font-weight: 100;
+          line-height: 2em;
+          margin-top: -4px;
+          margin-bottom: 0;
+          letter-spacing: -0.2375px;
+
+          @media (max-width:1023px) {
+            padding: 0 20px;
+          }
+
+          @media (max-width:920px) {
+            font-size: 14px;
+            line-height: 1.7em;
+          }
+
+          @media (max-width:520px) {
+            padding: 0 10px;
+          }
+        }
+
+        h6 {
+          font-size: 19px;
+          font-weight: 100;
+          line-height: 2em;
+          text-align: center;
+          padding: 30px 0 40px;
+          font-family: "Arial", Sans-serif;
+
+          @media (max-width:920px) {
+            padding-bottom: 20px;
+          }
+
+          @media (max-width:767px) {
+            font-size: 14px;
+            line-height: 1.7em;
+          }
+        }
+      }
+    }
+
+    // organizerSection
+    .organizerSection {
+      background: #EDEDED;
+
+      .introBox {
+        padding: 83px 20px 30px;
+        width: calc(100% - 358px);
+        margin: 0 auto;
+
+        @media (max-width:1023px) {
+          width: 100%;
+        }
+
+        @media (max-width:767px) {
+          padding-bottom: 70px;
+        }
+
+        h3 {
+          color: $black;
+          font-family: "bebas-neue", Sans-serif;
+          font-size: 66px;
+          font-weight: bold;
+          line-height: 0.5em;
+          text-align: center;
+          letter-spacing: 5px;
+          padding-top: 12px;
+
+          @media (max-width:1170px) {
+            font-size: 48px;
+          }
+
+          @media (max-width:1024px) {
+            font-size: 40px;
+          }
+
+          @media (max-width:767px) {
+            font-size: 46px;
+          }
+        }
+
+        .divDivider {
+          border-color: $black;
+        }
+
+        h6 {
+          font-size: 19px;
+          font-weight: 100;
+          line-height: 2em;
+          text-align: center;
+          padding: 12px 0 20px;
+          font-family: "Arial", Sans-serif;
+          margin-bottom: 0;
+
+          @media (max-width:1170px) {
+            padding-top: 0;
+          }
+
+          @media (max-width:1024px) {
+            font-size: 15px;
+          }
+
+          @media (max-width:767px) {
+            font-size: 14px;
+          }
+
+          @media (max-width:520px) {
+            padding: 0 0 10px;
+          }
+        }
+      }
+
+      .organizerImgGrup {
+        padding-bottom: 56px;
+        justify-content: center;
+
+        @media (max-width:1023px) {
+          justify-content: space-between;
+        }
+
+        // @media (max-width:520px) {
+        //   flex-wrap: wrap;
+        //   text-align: center;
+        //   padding-bottom: 30px;
+        //   flex-direction: column;
+        //   align-items: center;
+        // }
+
+        @media (max-width:767px) {
+          flex-wrap: wrap;
+        }
+
+        @media (max-width:520px) {
+          padding-bottom: 70px;
+        }
+
+        .list-group-item {
+          margin: 0px 20px 0px 20px;
+          padding: 15px;
+          border: none;
+          background: transparent;
+          width: 33.3%;
+
+          @media (max-width:1170px) {
+            padding: 0px;
+          }
+
+          @media (max-width:767px) {
+            width: 100%;
+            margin: 15px 0;
+            text-align: center;
+          }
+
+          @media (max-width:520px) {
+            margin-bottom: 0;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            // max-height: 65px;
+            // max-width: 240px;
+            object-fit: contain;
+
+            @media (max-width:1023px) {
+              max-height: 36px;
+            }
+
+            @media (max-width:767px) {
+              margin-bottom: 15px;
+              max-width: 490px;
+              max-height: none;
+            }
+
+            @media (max-width:520px) {
+              padding: 0 15%;
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+      }
+
+      .organizerPartnerImgs {
+        padding-bottom: 73px;
+        justify-content: center;
+
+        @media (max-width:520px) {
+          flex-wrap: wrap;
+          text-align: center;
+          padding-bottom: 30px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .list-group-item {
+          margin: 0px 20px;
+          padding: 10px;
+          border: none;
+          background: transparent;
+          width: 23%;
+          margin-left: 0;
+
+          &:last-child {
+            margin-left: 20px;
+            margin-right: 0;
+
+            @media (max-width:767px) {
+              margin-left: 0;
+            }
+          }
+
+          @media (max-width:1024px) {
+            padding: 0;
+          }
+
+          @media (max-width:520px) {
+            width: 100%;
+            margin: 0;
+            padding: 20px 0px;
+          }
+
+          p {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-bottom: 0;
+
+            @media (max-width:1024px) {
+              font-size: 18px;
+            }
+
+            @media (max-width:767px) {
+              margin-bottom: 10px;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            // max-height: 65px;
+            // max-width: 200px;
+            object-fit: contain;
+
+            @media (max-width:1024px) {
+              max-width: none;
+              max-height: 25px;
+            }
+
+            @media (max-width:520px) {
+              margin-bottom: 40px;
+              max-width: 65%;
+              max-height: 40px;
+            }
+          }
+        }
+
+        &:last-child {
+          @media (max-width:1024px) {
+            padding-bottom: 0;
+          }
+
+          .list-group-item {
+            img {
+              @media (max-width:1024px) {
+                max-width: none;
+                max-height: 40px;
+              }
+
+              @media (max-width:520px) {
+                margin: 0;
+                max-width: 80%;
+                max-height: none;
+                height: auto;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          .list-group-item {
+            margin: 0;
+            padding: 15px;
+            width: 27%;
+
+            @media (max-width:767px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &.applicationSection {
+        background: #1C1C1C;
+
+        .introBox {
+          padding: 90px 20px 70px;
+
+          .divDivider {
+            margin: 16px auto 12px;
+          }
+
+          .row {
+            max-width: 1170px;
+            padding: 10px;
+            margin: 0 auto;
+          }
+
+          h6 {
+            padding: 12px 0 30px;
+          }
+
+          @media (max-width:1024px) {
+            padding: 90px 0px 70px;
+          }
+        }
+
+        .appSectionCol {
+          padding: 0 53px;
+
+          @media (min-width:920px) {
+            &.pl-60 {
+              padding-left: 99px;
+            }
+
+            &.pr-60 {
+              padding-right: 99px;
+            }
+          }
+
+          @media (max-width:920px) {
+            padding: 0 25px;
+          }
+
+          @media (max-width:767px) {
+            padding: 0 5px;
+            max-width: 100%;
+            width: 100%;
+            flex: 100%;
+          }
+
+          h4 {
+            padding: 7px 10px;
+            background-color: $shadeBlack;
+            color: $white;
+            font-family: "Arial", Sans-serif;
+            font-size: 29px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0;
+
+            @media (max-width:1170px) {
+              font-size: 24px;
+            }
+
+            @media (max-width:920px) {
+              font-size: 23px;
+              margin-bottom: 0;
+            }
+          }
+
+          p {
+            text-align: center;
+            font-family: "Arial", Sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.5em;
+            letter-spacing: 0px;
+            color: $black;
+            padding: 20px 0;
+            margin: 0;
+            letter-spacing: -1px;
+
+            @media (max-width:1170px) {
+              font-size: 16px;
+              padding: 15px;
+            }
+
+            @media (max-width:1024px) {
+              font-size: 18px;
+              padding: 15px;
+            }
+
+            @media (max-width:767px) {
+              font-size: 18px;
+              padding: 15px;
+            }
+          }
+        }
+      }
+
+      &.JudgeSection {
+        .introBox {
+          padding: 106px 0px 0px;
+
+          @media (max-width:767px) {
+            padding: 50px 0px 0px;
+          }
+        }
+
+        .bg_text {
+          background: #020101;
+          text-align: center;
+          margin: 30px 50px 20px;
+
+          h5 {
+            padding: 8px;
+            font-family: "Arial", Sans-serif;
+            font-size: 29px;
+            color: #fff;
+            margin-bottom: 0;
+
+            @media (max-width:767px) {
+              font-size: 23px;
+              padding: 10px;
+              margin-bottom: 0;
+            }
+          }
+
+          @media (max-width:1170px) {
+            margin: 0px 20px 40px;
+          }
+
+          @media (max-width:767px) {
+            margin: 0 0 30px;
+          }
+        }
+
+        .card {
+          flex-direction: row;
+          padding: 0;
+          border: none;
+          box-shadow: none;
+          margin: 0px 30px 0px;
+          background: transparent;
+
+          @media (max-width:1170px) {
+            margin: 0px 20px 15px;
+          }
+
+          @media (max-width:767px) {
+            margin: 0px 10px 10px;
+            flex-direction: column;
+          }
+
+          .judgeCardImg {
+            height: 100%;
+            width: 30%;
+            object-fit: contain;
+            text-align: center;
+
+            @media (max-width:767px) {
+              width: 100%;
+              max-height: 421px;
+              margin-bottom: 10px;
+              min-height: 421px;
+              position: relative;
+
+              .card-img {
+                position: absolute;
+              }
+            }
+
+            @media (max-width:520px) {
+              max-height: 220px;
+              min-height: 220px;
+              text-align: inherit;
+            }
+
+            @media (max-width:375px) {
+              max-height: 200px;
+              min-height: 200px;
+              margin-bottom: 0;
+            }
+
+            .card-img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              width: 50%;
+              margin: 0 auto;
+              border-radius: 0;
+
+              @media (max-width:1023px) {
+                max-height: 168px;
+              }
+
+              @media (max-width:767px) {
+                max-height: 421px;
+              }
+
+              @media (max-width:520px) {
+                max-height: 250px;
+                width: 100%;
+              }
+            }
+          }
+
+          .card-body {
+            width: 70%;
+            padding: 0;
+            margin-bottom: 16px;
+
+            @media (max-width:767px) {
+              width: 100%;
+            }
+
+            .card-text,
+            .card-title {
+              color: $shadeBlack;
+              font-family: "Helvetica", Sans-serif;
+              font-size: 16px;
+              font-weight: 200;
+              line-height: 1.7em;
+
+              @media (max-width:1170px) {
+                font-size: 14px;
+                font-weight: 200;
+                line-height: 1.6em;
+              }
+            }
+          }
+        }
+
+        &.JudgingMemberSection {
+          background: #1C1C1C;
+          padding-top: 7px;
+
+          .introBox {
+            padding: 50px 0px 70px;
+
+            @media (max-width:767px) {
+              padding: 50px 0px 20px;
+            }
+
+            .card {
+              margin: 0px 30px 20px;
+
+              @media (max-width:767px) {
+                margin: 0px 10px 30px;
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .card-body {
+                .card-text {
+                  line-height: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.announcSection {
+        background: url('https://ik.imagekit.io/xanalia/Images/creative-Awards-Bg.jpg') !important;
+        background-repeat: no-repeat !important;
+        background-position: bottom center !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        padding: 50px 0 70px;
+
+        @media (min-width:767px) {
+          padding-bottom: 40px;
+        }
+
+        .introBox {
+          padding: 70px 50px;
+
+          @media (max-width:1024px) {
+            padding: 70px 20px;
+          }
+
+          h6 {
+            @media (min-width:767px) {
+              padding-bottom: 70px;
+            }
+          }
+
+          h3 {
+            padding-top: 28px;
+          }
+
+          .divDivider {
+            margin: 17px auto 13px;
+          }
+        }
+
+        h2 {
+          font-family: "Arial", Sans-serif;
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 2em;
+          color: $black;
+          margin-bottom: 0;
+
+          @media (max-width:1024px) {
+            font-size: 15px;
+            line-height: 1.7em;
+          }
+
+          @media (max-width:767px) {
+            font-size: 14px;
+            line-height: 2em;
+            margin-bottom: 0;
+          }
+        }
+
+        p {
+          color: $black;
+          font-family: "Arial", Sans-serif;
+          font-size: 19px;
+          font-weight: 100;
+          line-height: 2em;
+          padding-bottom: 30px;
+          margin-bottom: 0;
+
+          @media (max-width:1024px) {
+            font-size: 15px;
+          }
+
+          @media (max-width:767px) {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+        }
+
+        .list-group {
+          list-style: inside;
+          background: transparent;
+          padding-left: 19px;
+
+          .list-group-item {
+            background: transparent;
+            padding: 0;
+            border: none;
+            color: $black;
+            font-family: "Arial", Sans-serif;
+            font-size: 19px;
+            font-weight: 100;
+            line-height: 2em;
+            display: list-item;
+            list-style: initial;
+            list-style-position: outside;
+
+            @media (max-width:1170px) {
+              font-size: 16px;
+              line-height: 1.7em;
+            }
+          }
+        }
+      }
+    }
+
+    // AwardBoxSection
+    .AwardsSectionUI {
+      background: url('https://ik.imagekit.io/xanalia/Images/creative-Awards-Bg.jpg') !important;
+      background-repeat: no-repeat !important;
+      background-position: bottom center !important;
+      background-size: cover !important;
+      background-attachment: fixed !important;
+
+      @media (max-width:1024px) {
+        background-attachment: inherit;
+      }
+
+      @media (max-width:520px) {
+        background-attachment: inherit !important;
+        background-position: center center !important;
+      }
+
+      .AwardBox {
+        padding: 110px 0px 20px;
+        width: calc(100% - 410px);
+        margin: 0 auto;
+
+        // @media (max-width:1170px) {
+        //   width: calc(100% - 200px);
+        // }
+        @media (max-width:1024px) {
+          width: calc(100% - 0px);
+        }
+
+        @media (max-width:920px) {
+          width: calc(100% - 0px);
+          padding: 25px 25px;
+        }
+
+        @media (max-width:767px) {
+          width: 100%;
+          padding: 25px 10px;
+        }
+
+        h3 {
+          color: $black;
+          font-family: "bebas-neue", Sans-serif;
+          font-size: 66px;
+          font-weight: bold;
+          line-height: 0.5em;
+          text-align: center;
+          letter-spacing: 5px;
+          color: $white;
+          padding-top: 12px;
+
+          @media (max-width:1170px) {
+            font-size: 48px;
+          }
+
+          @media (max-width:1024px) {
+            margin-top: 48px;
+          }
+
+          @media (max-width:767px) {
+            margin-top: 35px;
+            letter-spacing: 3.5px;
+          }
+
+        }
+
+        h6 {
+          font-size: 19px;
+          font-weight: 100;
+          line-height: 2em;
+          text-align: center;
+          padding: 10px 0 20px;
+          font-family: "Arial", Sans-serif;
+          color: $white;
+          margin-bottom: 0;
+
+          @media (max-width:767px) {
+            padding-top: 0;
+          }
+        }
+
+        .goldAwardPrize {
+          background-color: rgba(3, 23, 115, 0.8);
+          max-width: calc(33.3% - 20px);
+          padding: 10px;
+          margin: 10px auto;
+
+          @media (max-width:520px) {
+            margin: 2.4% auto;
+          }
+
+          &:nth-child(2) {
+            border-right: none;
+            border-left: none;
+          }
+
+          .card-phone-header {
+            text-align: center;
+          }
+
+          .genesis-nft {
+            font-size: 16px;
+            // text-align: left;
+            color: #fff;
+            margin-top: 10px;
+          }
+
+          svg {
+            fill: #F4CA27;
+            color: #F4CA27;
+            border-color: #F4CA27;
+            max-height: 50px;
+          }
+
+          h2 {
+            font-size: 68px;
+            text-align: center;
+            font-weight: 100;
+            font-family: "bebas-neue", sans-serif;
+            margin: 0;
+            line-height: 2.1em;
+            color: $white;
+
+            @media (max-width:1170px) {
+              font-size: 48px;
+            }
+
+            @media (max-width:767px) {
+              margin: 1px 0 0;
+            }
+          }
+
+          h4 {
+            color: $white;
+            font-family: "Arial", Sans-serif;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 1em;
+            margin-bottom: 0;
+
+            @media (max-width:1023px) {
+              font-size: 19px;
+              margin-bottom: 0;
+            }
+
+            @media (max-width:920px) {
+              min-height: 15px;
+            }
+
+            @media (max-width:767px) {
+              min-height: auto;
+              font-size: 18px;
+            }
+          }
+
+          h5 {
+            color: $white;
+            font-family: "Arial", Sans-serif;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 1em;
+            // min-height: 141px;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:1170px) {
+              font-size: 20px;
+              min-height: 100px;
+            }
+
+            @media (max-width:1024px) {
+              font-size: 25px;
+              margin: 25px 0;
+            }
+
+            @media (max-width:767px) {
+              padding: 0;
+            }
+          }
+
+          @media (max-width:920px) {
+            border: none;
+
+            & {
+              max-width: 30.55%;
+              flex: auto;
+              padding: 25px 10px 20px;
+            }
+          }
+
+          @media (max-width:767px) {
+            & {
+              max-width: none;
+              flex: auto;
+              padding: 10px;
+            }
+          }
+
+          .crown_icon {
+            margin-bottom: 28px;
+
+            @media (min-width:768px) and (max-width:1024px) {
+              width: 80px;
+            }
+
+            @media (max-width:1024px) {
+              margin-bottom: 32px;
+            }
+
+            @media (max-width:767px) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      // scheduleSection
+      &.scheduleSection {
+        background-position: center;
+
+        .AwardBox {
+          padding: 74px 0px 30px;
+
+          @media (max-width:767px) {
+            padding: 53px 10px 30px;
+          }
+
+          .goldAwardPrize {
+            background-color: rgba(188, 3, 140, 0.67);
+            height: 148px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:1024px) {
+              height: 130px;
+            }
+
+            @media (max-width:767px) {
+              height: 111px;
+            }
+
+            h5 {
+              color: $white;
+              font-family: "Arial", Sans-serif;
+              font-size: 40px;
+              padding-top: 15px;
+              min-height: auto;
+
+              @media (max-width:1170px) {
+                font-size: 30px;
+                margin-bottom: 0;
+              }
+
+              @media (max-width:767px) {
+                padding-top: 5px;
+              }
+            }
+
+            .card-phone-header {
+              padding-top: 20px;
+              align-self: center;
+
+              h5 {
+                padding: 0;
+                margin-bottom: 0;
+                height: 84px;
+
+                @media (max-width:767px) {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .creativeAwardHeadUI,
+  .creativeAwardBody .creatorsSection .creativeAwardBody .AwardsSectionUI .AwardBox,
+  .creativeAwardBody .organizerSection.announcSection {
+    @media (max-width:767px) {
+      background-attachment: inherit !important;
+      background-position: center center !important;
+    }
+  }
+}

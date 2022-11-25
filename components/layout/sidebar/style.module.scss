@@ -1,0 +1,203 @@
+@import '@/styles/_variables.scss';
+@import '@/styles/_mixins';
+
+.mySidebar {
+    width: 0px;
+    height: calc(100vh - 48px);
+    background-color: $text-05-color;
+    position: fixed;
+    z-index: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    overflow-y: auto;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    &[class*='sidebar-open'] {
+        width: $sidebar-width !important;
+        border-right: 1px solid $border-01-color;
+    }
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+// .margin-left-sidebar-open {
+//     margin-left: $sidebar-width;
+//     @include respond(phone) {
+//         margin-left: 0;
+//     }
+// }
+
+.active-sidebar-link {
+    color: $border-12-color !important;
+}
+
+.list-items-link-sidebar {
+    display: flex;
+    color: $background-02-color;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    align-items: center;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text-26-color;
+    &:hover {
+        color: $text-24-color;
+    }
+}
+
+.list-items-link-sidebar__active {
+    display: flex;
+    color: $background-02-color;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    align-items: center;
+    border-left: 3px solid $primary-color--1;
+    color: $primary-color--1;
+    background-color: $background-19-color;
+}
+
+.text-item-side-bar {
+    color: $background-02-color;
+    text-align: center;
+}
+
+.list-items-icon-sidebar {
+    min-width: 35px;
+    text-align: center;
+}
+
+.title-list-icon-sidebar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text-26-color;
+}
+.title-list-name-sidebar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    min-width: 33px;
+}
+
+.icon-header-accordion {
+    margin-right: 10px;
+    padding-left: 22px;
+}
+
+.accorLabel {
+    &:focus {
+        box-shadow: none;
+    }
+}
+.item-accordion {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-left: 30px;
+
+    &:hover {
+        background: rgba(133, 89, 89, 0.05);
+        width: 100%;
+        color: $background-02-color;
+    }
+}
+
+.accordion-item__active {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    color: $border-12-color;
+    margin-left: 30px;
+
+    &:hover {
+        background: rgba(133, 89, 89, 0.05);
+        width: 100%;
+        color: $background-02-color;
+    }
+}
+
+.accordion-item {
+    border: none;
+    font-size: 14px;
+}
+
+.title-list-items-page {
+    cursor: pointer;
+    &:hover {
+        background: rgba(133, 89, 89, 0.05);
+        width: 100%;
+        color: $background-02-color;
+    }
+}
+.button-focus {
+    & > button {
+        width: 209px;
+        height: 40px;
+        padding: 0;
+        gap: 0px;
+    }
+    & > button:focus {
+        box-shadow: none;
+        border: none;
+        background-color: $text-05-color;
+    }
+    & > button:not(.collapsed) {
+        background-color: $text-05-color;
+        box-shadow: none;
+        margin-right: 0px;
+    }
+}
+
+.button-focus__active {
+    border-left: 3px solid $primary-color--1;
+}
+
+.item-icon-accordion {
+    margin-right: 10px;
+}
+
+// .itemSub-label {
+//     font-weight: 500;
+//     color: $background-02-color;
+//     font-size: 14px;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .itemSub-label__active {
+//     font-weight: 400;
+//     color: $primary-color--1;
+//     font-size: 12px;
+//     display: flex;
+//     align-items: center;
+// }
+
+.dot-accordion {
+    content: '';
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: $background-02-color;
+}
+.dot-accordion__active {
+    content: '';
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: $primary-color--1;
+}
